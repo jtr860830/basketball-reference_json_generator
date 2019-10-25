@@ -1,0 +1,27 @@
+{
+  "name": "basketball-reference_json_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "babel-node app.js",
+    "build": "babel app.js -d dist",
+    "clean": "rm -rf dist",
+    "start": "npm run clean && npm run build && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3"
+  }
+}
